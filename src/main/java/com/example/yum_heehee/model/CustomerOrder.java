@@ -7,8 +7,8 @@ import jakarta.persistence.Id;
 @Entity
 public class CustomerOrder {
     @Id
-    @Column(name="CUSTOMERORDER", columnDefinition = "VARCHAR(9)")
-    private int CUSTOMERORDER;
+    @Column(name="CUSTOMER_ORDER", columnDefinition = "VARCHAR(9)")
+    private int CUSTOMER_ORDER;
 
     @Column
     private String PHONENO;
@@ -20,18 +20,18 @@ public class CustomerOrder {
 
     }
 
-    public CustomerOrder(int CUSTOMERORDER, String PHONENO, int EMPLOYEEID){
-        this.CUSTOMERORDER = CUSTOMERORDER;
+    public CustomerOrder(int CUSTOMER_ORDER, String PHONENO, int EMPLOYEEID){
+        this.CUSTOMER_ORDER = CUSTOMER_ORDER;
         this.PHONENO = PHONENO;
         this.EMPLOYEEID = EMPLOYEEID;
     }
 
     public int getCustomerOrder(){
-        return CUSTOMERORDER;
+        return CUSTOMER_ORDER;
     }
 
     public void setCustomerOrder(int customerorder){
-        this.CUSTOMERORDER = customerorder;
+        this.CUSTOMER_ORDER = customerorder;
     }
 
     public String getPhoneNo(){

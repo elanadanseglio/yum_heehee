@@ -13,7 +13,7 @@ public class OrderDetails {
     private int ORDER_NUMBER;
 
     @Column
-    private int CUSTOMERORDER;
+    private int CUSTOMER_ORDER;
 
     @Column
     private float TOTALPRICE;
@@ -28,16 +28,16 @@ public class OrderDetails {
     }
 
     @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "created_at", columnDefinition = "TIMESTAMP")
+    @Column(name = "TIME", columnDefinition = "TIMESTAMP")
     private Date TIME;
 
     public OrderDetails(){
 
     }
 
-    public OrderDetails(int ORDER_NUMBER, int CUSTOMERORDER, float TOTALPRICE, Date TIME){
+    public OrderDetails(int ORDER_NUMBER, int CUSTOMER_ORDER, float TOTALPRICE, Date TIME){
         this.ORDER_NUMBER = ORDER_NUMBER;
-        this.CUSTOMERORDER = CUSTOMERORDER;
+        this.CUSTOMER_ORDER = CUSTOMER_ORDER;
         this.TOTALPRICE = TOTALPRICE;
         this.TIME = TIME;
     }
@@ -51,11 +51,11 @@ public class OrderDetails {
     }
 
     public int getCustomerOrder(){
-        return CUSTOMERORDER;
+        return CUSTOMER_ORDER;
     }
 
-    public void setCustomerOrder(int customerorder){
-        this.CUSTOMERORDER = customerorder;
+    public void setCustomerOrder(int customer_order){
+        this.CUSTOMER_ORDER = customer_order;
     }
 
 
