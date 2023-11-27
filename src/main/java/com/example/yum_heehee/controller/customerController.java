@@ -7,7 +7,7 @@ import org.springframework.http.HttpStatus;
 import com.example.yum_heehee.services.CustomerService;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api")
 public class customerController {
